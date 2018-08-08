@@ -15,7 +15,13 @@ public class FlowLayoutManager extends RecyclerView.LayoutManager {
      * 内容的总高度
      */
     private int totalHeight = 0;
+    /**
+     * 保存所有item的内容区域边界
+     */
     private SparseArray<Rect> allItemFrames;
+    /**
+     * 保存所有item的attach状态
+     */
     private SparseBooleanArray allItemsAttached;
     /**
      * 滑动的偏移量，类似于ScrollY
